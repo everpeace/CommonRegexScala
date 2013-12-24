@@ -11,6 +11,8 @@ Please note that this is currently English/US specific.
 
 Examples and Usage
 ========
+see also [CommonRegexSpec](https://github.com/everpeace/CommonRegexScala/blob/master/src/test/scala/CommonRegexSpec.scala).
+
     scala> import commonregex._
     import commonregex._
     
