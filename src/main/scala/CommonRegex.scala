@@ -1,10 +1,10 @@
-package com.github.everpeace.commonregex
+package commonregex
 
 object CommonRegex {
   def apply() = new CommonRegex(None)
   def apply(text:String) = new CommonRegex(Option(text))
 
-  val time = caseIgnore("""(0?[0-9]|1[0-2]):[0-5][0-9](am|pm)|([01]?[0-9]|2[0-3]):[0-5][0-9]""").r
+  val time = caseIgnore("""(0?[0-9]|1[0-2]):[0-5][0-9]\s*(am|pm)|([01]?[0-9]|2[0-3]):[0-5][0-9]""").r
   val ip = """((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)""".r
   val phone = """\d?[^\s\w]*(?:\(?\d{3}\)?\W*)?\d{3}\W*\d{4}""".r
   val link = """((?:https?:\/\/|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\((?:[^\s()<>]+|(?:\([^\s()<>]+\)))*\))+(?:\((?:[^\s()<>]+|(?:\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:\'".,<>?\xab\xbb\u201c\u201d\u2018\u2019]))""".r
