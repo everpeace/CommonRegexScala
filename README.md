@@ -74,3 +74,7 @@ CommonRegex also provides scale's `Regex` object.  So, you can use various metho
     
     scala> CommonRegex.email.findAllIn(text).toList
     res16: List[String] = List(associative@mail.com)
+
+CommonRegex Ports:
+----
+There are some CommonRegex ports for several languages.  see [here] (https://github.com/madisonmay/CommonRegex/#commonregex-ports)
